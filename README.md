@@ -78,9 +78,9 @@ cortex --connection <connection_name>
 At the CoCo prompt, run (replace values with what your facilitator announced):
 
 ```
-/sql SET hol_database  = 'BLACKROCK_HOL_DB'
-/sql SET hol_warehouse = 'HOL_WH'
-/sql SET my_schema     = LOWER(CURRENT_USER()) || '_hol'
+/sql SET hol_database = '<YOUR DATABASE FOR HOL>'
+/sql SET hol_warehouse = '<YOUR WAREHOUSE FOR HOL>'
+/sql SET my_schema = '<YOUR SCHEMA FOR THE HOL>'
 /sql USE DATABASE  IDENTIFIER($hol_database)
 /sql USE SCHEMA    IDENTIFIER($my_schema)
 /sql USE WAREHOUSE IDENTIFIER($hol_warehouse)
