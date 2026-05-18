@@ -60,11 +60,10 @@ Before starting, note down:
 - **HOL Warehouse name** (e.g. `HOL_WH`)
 - **Snowflake connection name** (e.g. `hol_connection`)
 
-### Step 2 — Clone or download this repository
+### Step 2 — Create the Schema for your HOL
 
-```bash
-git clone <repo_url>
-cd COCO-HOL
+```Login to Snowsight UI and execute 
+create schema <DATABASE NAME>. <YOURNAME>_COCO_HOL
 ```
 
 ### Step 3 — Launch CoCo CLI
@@ -96,28 +95,6 @@ Each lab is self-contained with CoCo prompts and step-by-step instructions.
 
 ---
 
-## Multi-User Design
-
-Each participant works in an **isolated personal schema** named `<your_snowflake_username>_hol`. All tables, queries, and apps you create live in your schema — no participant can affect another's work.
-
-```
-HOL_DATABASE/
-├── jsmith_hol/     ← Participant: jsmith (your tables + Streamlit app)
-├── alee_hol/       ← Participant: alee
-└── mwilson_hol/    ← Participant: mwilson
-```
-
----
-
-## For Facilitators
-
-See the **Facilitator Guide** section in `HOL-Specifications.md` (not tracked in git) for:
-- Pre-lab environment setup and grants
-- Timing guide
-- Troubleshooting tips
-- Post-session cleanup script
-
----
 
 ## Key CoCo CLI Tips
 

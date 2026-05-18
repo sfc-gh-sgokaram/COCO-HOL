@@ -14,7 +14,7 @@ Before any analytics can happen, data engineers need to scaffold data models and
 
 ## Prerequisites
 
-Complete **Lab 0** before starting. You should have your Snowflake connection configured.
+Complete Instructions in README before starting. You should have your Snowflake connection configured , Database and Schema. 
 
 ---
 
@@ -84,7 +84,7 @@ SELECT 'BENCHMARK_WEIGHTS',         COUNT(*)             FROM BENCHMARK_WEIGHTS 
 SELECT 'TRADE_HISTORY',             COUNT(*)             FROM TRADE_HISTORY;
 ```
 
-CoCo will generate `lab1_setup.sql`, execute it against Snowflake, and display the verification results in the terminal.
+CoCo will generate `lab1_setup.sql`, Review the SQL and valdiate.  Once done then ask CoCo to execute the SQL and create the objects. 
 
 ---
 
